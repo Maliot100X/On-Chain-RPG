@@ -1253,7 +1253,8 @@ export default function GameCanvas({
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: isDesktop ? "row" : "column",
+                    flexDirection: "row",
+                    flexWrap: "wrap",
                     gap: 8,
                   }}
                 >
