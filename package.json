@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cd frontend && npm run dev",
-    "build": "cd frontend && npm install && npm run build && cd .. && cp -r frontend/.next .next && cp -r frontend/public public && cp frontend/next.config.ts next.config.ts && cp frontend/package.json package.json",
+    "build": "cd frontend && npm install && npm run build && cd .. && mkdir .next && cp -r frontend/.next/* .next/ && cp -r frontend/public public && cp frontend/package.json package.json && cp frontend/next.config.ts next.config.ts",
     "start": "next start"
   },
   "dependencies": {
